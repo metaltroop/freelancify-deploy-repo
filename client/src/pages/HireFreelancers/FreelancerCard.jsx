@@ -4,7 +4,7 @@ function FreelancerCard() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/user/domain/Web-Dev")
+    fetch("https://freelancify-deploy-repo.vercel.app/user/domain/Web-Dev")
       .then((response) => response.json())
       .then((data) => setUsers(data.data))
       .catch((error) => console.error("Error fetching users:", error));

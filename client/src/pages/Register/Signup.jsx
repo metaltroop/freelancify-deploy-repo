@@ -13,7 +13,7 @@ const Signup = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3001/user/register", {
+      const response = await fetch("https://freelancify-deploy-repo.vercel.app/user/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const Signup = () => {
     event.preventDefault();
   
     try {
-      const response = await fetch("http://localhost:3001/user/login", {
+      const response = await fetch("https://freelancify-deploy-repo.vercel.app/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

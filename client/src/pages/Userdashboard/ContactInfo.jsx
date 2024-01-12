@@ -10,7 +10,7 @@ const ContactInfo = () => {
   useEffect(() => {
     const fetchCurrentUser = async () => {
       try {
-        const response = await fetch("http://localhost:3001/user/current", {
+        const response = await fetch("https://freelancify-deploy-repo.vercel.app/user/current", {
           method: "GET",
           headers: {
             Authorization: localStorage.getItem("authToken"),
@@ -45,7 +45,7 @@ const ContactInfo = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:3001/user/contact/${email}`, {
+      const response = await fetch(`https://freelancify-deploy-repo.vercel.app/user/contact/${email}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

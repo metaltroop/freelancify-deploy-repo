@@ -30,7 +30,7 @@ const Profile = () => {
     // Fetch current user data when the component mounts
     const fetchCurrentUser = async () => {
       try {
-        const response = await fetch("http://localhost:3001/user/current", {
+        const response = await fetch("https://freelancify-deploy-repo.vercel.app/user/current", {
           method: "GET",
           headers: {
             Authorization: localStorage.getItem("authToken"), // Include the JWT token in the headers
@@ -70,7 +70,7 @@ const Profile = () => {
     };
   
     try {
-      const response = await fetch(`http://localhost:3001/user/${email}`, {
+      const response = await fetch(`https://freelancify-deploy-repo.vercel.app/user/${email}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

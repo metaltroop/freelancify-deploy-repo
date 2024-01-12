@@ -25,7 +25,7 @@ const Sidebar = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch("http://localhost:3001/user/current", {
+        const response = await fetch("https://freelancify-deploy-repo.vercel.app/user/current", {
           method: "GET",
           headers: {
             Authorization: localStorage.getItem("authToken"),
