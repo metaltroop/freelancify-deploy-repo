@@ -9,7 +9,7 @@ const userRoutes=require('./routes/userRoutes');
 const contactinfoRoutes=require('./routes/contactinfoRoutes');
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173', // Specify the allowed origin
+    origin: 'https://freelancify-deploy-repo-w33j.vercel.app', // Specify the allowed origin
     credentials: true, // Include cookies and credentials with the requests
   }));
   
