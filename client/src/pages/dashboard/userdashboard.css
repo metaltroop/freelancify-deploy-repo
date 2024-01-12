@@ -1,0 +1,6 @@
+.gradient {
+    background-image:radial-gradient(circle at 10% 20%, rgba(0, 0, 0, 0.63) 0%, rgb(0, 0, 0, 0.63) 40.2%), url("../../assets/hand-drawn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
