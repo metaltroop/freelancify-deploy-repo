@@ -8,7 +8,7 @@ function PythonDev() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/user/domain/Python-Dev")
+    fetch("https://freelancify-deploy-repo.vercel.app/user/domain/Python-Dev")
       .then((response) => response.json())
       .then((data) => setUsers(data.data))
       .catch((error) => console.error("Error fetching users:", error));
